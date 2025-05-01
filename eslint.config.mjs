@@ -9,16 +9,6 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-
-  // Tambahkan aturan kustom di sini
-  {
-    rules: {
-      "no-console": "off",
-      "react/prop-types": "off",
-    },
-  },
-];
+const eslintConfig = [...compat.extends("next/core-web-vitals", "next/typescript")];
 
 export default eslintConfig;

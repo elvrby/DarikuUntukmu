@@ -1,5 +1,4 @@
 import MobileComponent from "./components/header";
-import Index from "./components";
 import Gameboy from "./components/gameboy";
 
 export default function Home() {
