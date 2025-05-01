@@ -12,10 +12,14 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
-  // Tambahkan aturan ESLint yang ingin di-disable di sini
+  // Tambahkan aturan global di sini
   {
     rules: {
-      "react/no-unescaped-entities": "off", // ✅ Disable rule ini
+      "no-console": "off",
+      "react/no-unescaped-entities": "off",
+      "react/react-in-jsx-scope": "off", // contoh lain
+      "@next/next/no-img-element": "off",
+      // tambahkan aturan lain yang ingin kamu disable
     },
   },
 ];
