@@ -173,3 +173,22 @@ body.light-theme .bannerboxfacility {
 .saweria-button:active {
   box-shadow: none;
 }
+
+@keyframes type-in {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.animate-type-in {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: type-in 0.8s steps(30) forwards; /* Set 'steps' sesuai panjang teks */
+}
