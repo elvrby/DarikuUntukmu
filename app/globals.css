@@ -14,13 +14,162 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-press-start-2p), sans-serif;
+}
+body.dark-theme {
+  background-color: black;
+}
+
+body.dark-theme .bgr {
+  background-color: rgb(33, 33, 33); /* Light mode background */
+  color: white; /* Light mode text color */
+  overflow-y: auto; /* Atau scroll */
+  height: 100%;
+}
+
+body.dark-theme .searchbar {
+  background-color: rgb(33, 33, 33); /* Light mode background */
+  color: white;
+}
+body.dark-theme .searchbarbtn {
+  background-color: rgb(69, 69, 69); /* Light mode background */
+  color: white;
+}
+body.dark-theme .btnclm {
+  background-color: rgb(72, 72, 72);
+  color: white;
+  overflow-y: auto;
+  height: 100%;
+}
+body.dark-theme main {
+  background-color: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+  transition: background-color 0.3s ease;
+}
+body.dark-theme .navbar {
+  background-color: #151515; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+body.dark-theme input {
+  background: #4a4a4a;
+  border: #4a4a4a;
+}
+body.dark-theme .line {
+  border: #4a4a4a;
+  border-top: solid 1px #4a4a4a;
+}
+body.dark-theme .ofill {
+  fill: white;
+}
+body.dark-theme .ostroke {
+  stroke: white;
+}
+body.dark-theme .bdown {
+  border: 2px solid #4a4a4a;
+}
+body.dark-theme .bdown:hover {
+  border: 2px solid #4a4a4a;
+  background: #4a4a4a;
+}
+body.dark-theme .bannerboxfacility {
+  background-color: #232323;
+}
+
+ul:hover .textniconH {
+  fill: white;
+  color: white;
+  transition: 0.4s;
+}
+
+body.dark-theme .box {
+  background-color: #242424;
+  color: white;
+}
+
+.boxH:hover {
+  background-color: #242424;
+  border-radius: 0.5rem;
+}
+
+.shadowH:hover {
+  box-shadow: 0 10px 6px -1px rgba(255, 0, 0, 0.1), 0 5px 10px -1px rgba(255, 0, 0, 0.242);
+}
+
+/* Light theme */
+body.light-theme {
+  background-color: #f3f3f3;
+}
+body.light-theme .bgr {
+  background-color: #f3f3f3; /* Dark mode background */
+  color: black; /* Dark mode text color */
+  overflow-y: auto; /* Atau scroll */
+  height: 100%;
+}
+body.light-theme .searchbar {
+  background-color: #f3f3f3; /* Dark mode background */
+  color: black; /* Dark mode text color */
+}
+body.light-theme .btnclm {
+  background-color: #f3f3f3;
+  color: black;
+  overflow-y: auto;
+  height: 100%;
+}
+
+body.light-theme main {
+  background-color: #f3f3f3; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  transition: background-color 0.3s ease;
+}
+body.light-theme .navbar {
+  background-color: #f3f3f3; /* Light mode background */
+  color: #000000; /* Light mode text color */
+}
+
+body.light-theme .ofill {
+  fill: black;
+}
+body.light-theme .ostroke {
+  stroke: black;
+}
+body.light-theme input {
+  background: #f3f3f3;
+}
+body.light-theme .line {
+  border-top: solid 1px #dadada;
+}
+body.light-theme .bdown {
+  border: 2px solid #4a4a4a;
+}
+body.light-theme .bdown:hover {
+  border: 2px solid #4a4a4a;
+  background: #4a4a4a;
+  color: white;
+}
+body.light-theme .bannerboxfacility {
+  background-color: #cdd9ec;
+}
+
+.saweria-button {
+  display: inline-block;
+  font-size: 10px;
+  padding: 0.75rem 1.5rem; /* setara py-3 px-6 */
+  border: none;
+  border-radius: 0.5rem; /* rounded-lg */
+  cursor: pointer;
+  transition: box-shadow 150ms ease-in-out;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.962);
+}
+
+.saweria-button:hover {
+  box-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.saweria-button:active {
+  box-shadow: none;
 }
