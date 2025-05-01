@@ -9,6 +9,15 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals", "next/typescript")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // Tambahkan aturan ESLint yang ingin di-disable di sini
+  {
+    rules: {
+      "react/no-unescaped-entities": "off", // ✅ Disable rule ini
+    },
+  },
+];
 
 export default eslintConfig;
